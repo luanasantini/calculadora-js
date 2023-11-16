@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -16,32 +16,40 @@
 </head>
 
 <body>
-	<div class="calculadora">
-		<div class="calculadora-display" value="0">0</div>
-		<div class="detalhe"></div>
-		<div class="calculadora-estrutura">
-			<div class="calculadora-teclas">
-				<button class="btn span-2 operator gray3" data-action="limpa">AC</button>
-				<button class="btn tecla-operador span-1 gray3" data-action="apaga">&larr;</button>
-				<button class="btn tecla-operador purple" data-action="divide">&divide;</button>
-				<button class="btn gray1">7</button>
-				<button class="btn gray1">8</button>
-				<button class="btn gray1">9</button>
-				<button class="btn tecla-operador purple" data-action="multiplica">&times;</button>
-				<button class="btn gray1">4</button>
-				<button class="btn gray1">5</button>
-				<button class="btn gray1">6</button>
-				<button class="btn tecla-operador purple" data-action="subtrai">-</button>
-				<button class="btn gray1">1</button>
-				<button class="btn gray1">2</button>
-				<button class="btn gray1">3</button>
-				<button class="btn tecla-operador purple" data-action="soma">+</button>
-				<button class="btn span-2 gray1">0</button>
-				<button class="btn span-1 gray1" data-action="decimal">.</button>
-				<button class="tecla-igual btn span-1 pink" data-action="calcula">=</button>
+	<main>
+		<div class="calculadora">
+			<div class="calculadora-display" value="0">0</div>
+			<div class="detalhe"></div>
+			<div class="calculadora-estrutura">
+				<div class="calculadora-teclas">
+					<button class="btn span-2 operator gray3" data-action="limpa">AC</button>
+					<button class="btn tecla-operador span-1 gray3" data-action="apaga">&larr;</button>
+					<button class="btn tecla-operador purple" data-action="divide">&divide;</button>
+					<button class="btn gray1">7</button>
+					<button class="btn gray1">8</button>
+					<button class="btn gray1">9</button>
+					<button class="btn tecla-operador purple" data-action="multiplica">&times;</button>
+					<button class="btn gray1">4</button>
+					<button class="btn gray1">5</button>
+					<button class="btn gray1">6</button>
+					<button class="btn tecla-operador purple" data-action="subtrai">-</button>
+					<button class="btn gray1">1</button>
+					<button class="btn gray1">2</button>
+					<button class="btn gray1">3</button>
+					<button class="btn tecla-operador purple" data-action="soma">+</button>
+					<button class="btn span-2 gray1">0</button>
+					<button class="btn span-1 gray1" data-action="decimal">.</button>
+					<button class="tecla-igual btn span-1 pink" data-action="calcula">=</button>
+				</div>
 			</div>
 		</div>
-	</div>
+		<footer>
+			<p1>Projeto educacional desenvolvido por Luana Santini para a disciplina de Desenvolvimento Web, do curso
+				Sistemas de Informação - Estácio Florianópolis.<br>
+				O projeto não possui qualquer finalidade comercial, servindo exclusivamente como material educacional e
+				para portfólio.</p1>
+		</footer>
+	</main>
 </body>
 
 </html>
