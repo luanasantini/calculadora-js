@@ -5,37 +5,40 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 
-	<script src="/main.js" defer></script>
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/style.css">
-
+	<script src="/main.js" defer></script>
 	<title>Calculadora JS</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="calculadora">
-			<div class="calculadora-display" value="0">0</div>
+	<div class="calculadora">
+		<div class="calculadora-display" value="0">0</div>
+		<div class="detalhe"></div>
+		<div class="calculadora-estrutura">
 			<div class="calculadora-teclas">
-				<button class="btn span-2 operator" data-action="limpa">AC</button>
-				<button class="btn tecla-operador span-1" data-action="apaga">&larr;</button>
-				<button class="btn tecla-operador" data-action="divide">&divide;</button>
-				<button class="btn">7</button>
-				<button class="btn">8</button>
-				<button class="btn">9</button>
-				<button class="btn tecla-operador" data-action="multiplica">&times;</button>
-				<button class="btn">4</button>
-				<button class="btn">5</button>
-				<button class="btn">6</button>
-				<button class="btn tecla-operador" data-action="subtrai">-</button>
-				<button class="btn">1</button>
-				<button class="btn">2</button>
-				<button class="btn">3</button>
-				<button class="btn tecla-operador" data-action="soma">+</button>
-				<button class="btn span-2">0</button>
-				<button class="btn span-1" data-action="decimal">.</button>
-				<button class="tecla-igual btn span-1" data-action="calcula">=</button>
+				<button class="btn span-2 operator gray3" data-action="limpa">AC</button>
+				<button class="btn tecla-operador span-1 gray3" data-action="apaga">&larr;</button>
+				<button class="btn tecla-operador purple" data-action="divide">&divide;</button>
+				<button class="btn gray1">7</button>
+				<button class="btn gray1">8</button>
+				<button class="btn gray1">9</button>
+				<button class="btn tecla-operador purple" data-action="multiplica">&times;</button>
+				<button class="btn gray1">4</button>
+				<button class="btn gray1">5</button>
+				<button class="btn gray1">6</button>
+				<button class="btn tecla-operador purple" data-action="subtrai">-</button>
+				<button class="btn gray1">1</button>
+				<button class="btn gray1">2</button>
+				<button class="btn gray1">3</button>
+				<button class="btn tecla-operador purple" data-action="soma">+</button>
+				<button class="btn span-2 gray1">0</button>
+				<button class="btn span-1 gray1" data-action="decimal">.</button>
+				<button class="tecla-igual btn span-1 pink" data-action="calcula">=</button>
 			</div>
 		</div>
 	</div>

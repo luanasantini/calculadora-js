@@ -1,28 +1,100 @@
+:root {
+    --purple: #6344D4;
+    --gray1: #171C22;
+    --gray2: #212A35;
+    --gray3: #2E3A48;
+    --gray4: #EAEBED;
+    --pink: #FF2171;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray4);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
-.calculadora {
-    max-width: 320px;
-    background: #eee;
+.purple {
+    background-color: var(--purple);
 }
+
+.gray1 {
+    background-color: var(--gray1);
+}
+
+.gray3 {
+    background-color: var(--gray3);
+}
+
+.pink {
+    background: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+}
+
+
+.calculadora-display {
+    background: var(--gray1);
+    color: var(--gray4);
+    font-size: 4rem;
+    text-align: right;
+    padding: 7rem 1rem 0 0;
+    width: 20.5rem;
+    height: 12rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.detalhe {
+    height: 0.7rem;
+    width: 20.5rem;
+    background: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+.calculadora-estrutura {
+    background-color: var(--gray2);
+    width: 20.5rem;
+    height: 26.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
 
 .calculadora-teclas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border: 0;
+    width: 19rem;
+    gap: 0.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
-.calculadora-display {
-    font-family: 'Space Mono', serif;
-    background: black;
+.btn {
+    border-radius: 0.5rem;
+    font-size: 1.4em;
+    height: 4.3rem;
+    border: none;
     color: white;
-    font-size: 2em;
-    border: 0;
-    padding: 0.3em;
-    text-align: right;
-    width: 100%;
-    height: 100px;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
 
 .span-1 {
@@ -37,15 +109,6 @@
     grid-column: span 3;
 }
 
-.btn {
-    font-size: 1em;
-    height: 65px;
-    border: 1px solid black;
-}
-
-.btn:hover {
-    background: #fff;
-}
 
 .botao-ativo {
     background: gray;
